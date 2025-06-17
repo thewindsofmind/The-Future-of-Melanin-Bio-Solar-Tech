@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future of Energy: Melanin & CRISPR Solar Technology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A2463; 
+            color: #E2E8F0;
+        }
+        .card {
+            background-color: rgba(62, 146, 204, 0.1);
+            border: 1px solid rgba(62, 146, 204, 0.3);
+        }
+        .stat-card {
+            background-color: #3E92CC;
+            color: #FFFFFF;
+        }
+        .highlight-text {
+            color: #FFC43D;
+        }
+        .accent-text {
+            color: #D8315B;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        .flow-box {
+            border: 2px solid #3E92CC;
+            background-color: rgba(10, 36, 99, 0.5);
+            text-align: center;
+        }
+        .flow-arrow {
+            font-size: 2rem;
+            color: #FFC43D;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container mx-auto p-4 md:p-8">
+        
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black mb-4">The Future is <span class="highlight-text">Bio-Solar</span></h1>
+            <p class="text-lg md:text-xl max-w-4xl mx-auto text-slate-300">Harnessing nature's "super pigment" and revolutionary gene-editing, scientists are paving the way for self-repairing, sustainable solar panels. This is the story of how melanin, bio-photovoltaics, and CRISPR are converging to redefine clean energy.</p>
+        </header>
+
+        <section id="melanin-properties" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Melanin: Nature's High-Tech Material</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="lg:col-span-1 card rounded-lg shadow-lg p-6 flex flex-col justify-center items-center">
+                    <p class="text-lg text-center text-slate-300 mb-2">Conductivity Boost via Annealing</p>
+                    <div class="text-7xl font-black highlight-text">10⁹x</div>
+                    <p class="text-center mt-2 text-slate-400">Chemical manipulation can increase melanin's electrical conductivity by a billion-fold, transforming it from a limited conductor into a highly efficient material for electronics.</p>
+                </div>
+                
+                <div class="lg:col-span-2 card rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-center mb-4">A Multifunctional Biopolymer</h3>
+                    <p class="text-center text-slate-400 mb-4">Melanin is far more than a simple pigment. Its unique molecular structure gives it a range of powerful optoelectronic and protective properties, making it a versatile tool for advanced materials science.</p>
+                    <div class="chart-container">
+                        <canvas id="melaninPropertiesChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 card rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-center mb-4">Broadband Light Absorption</h3>
+                    <p class="text-center text-slate-400 mb-4">Unlike many materials that only absorb a narrow band of light, melanin efficiently captures energy across the entire UV-Visible spectrum. This characteristic is crucial for maximizing energy harvesting from sunlight.</p>
+                    <div class="chart-container h-[400px] max-h-[450px]">
+                         <canvas id="absorptionSpectrumChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bpv-tech" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8">The Promise of Bio-Photovoltaics (BPV)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-center mb-4">How "Living Solar Cells" Work</h3>
+                    <p class="text-slate-400 mb-6 text-center">BPV systems use living photosynthetic organisms, like cyanobacteria, to convert light into electricity. The process is a form of biological electrochemical energy conversion.</p>
+                    <div class="flex flex-col items-center space-y-2">
+                        <div class="flow-box rounded-full p-4 w-48">☀️ Light Energy</div>
+                        <div class="flow-arrow">↓</div>
+                        <div class="flow-box rounded-lg p-4 w-64">🔬 Photosynthetic Microbes<br><span class="text-sm text-slate-400">(e.g., Cyanobacteria)</span></div>
+                        <div class="flow-arrow">↓</div>
+                        <div class="flow-box rounded-lg p-4 w-64">⚡ Electron Generation<br><span class="text-sm text-slate-400">(via Water Oxidation)</span></div>
+                        <div class="flow-arrow">↓</div>
+                        <div class="flow-box rounded-lg p-4 w-64">🔋 Anode Collection<br><span class="text-sm text-slate-400">(Electrons transfer to electrode)</span></div>
+                        <div class="flow-arrow">↓</div>
+                        <div class="flow-box rounded-full p-4 w-48 highlight-text font-bold">💡 Electrical Current</div>
+                    </div>
+                </div>
+                <div class="card rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-center mb-4">BPV vs. Conventional Silicon PV</h3>
+                    <p class="text-slate-400 mb-6 text-center">While currently less efficient, BPV technology offers unique environmental and functional advantages over traditional silicon-based solar panels.</p>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead>
+                                <tr class="border-b border-slate-600">
+                                    <th class="p-2">Feature</th>
+                                    <th class="p-2 text-center highlight-text">Bio-Photovoltaics</th>
+                                    <th class="p-2 text-center">Silicon PV</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-slate-700">
+                                    <td class="p-2 font-semibold">Self-Repair</td>
+                                    <td class="p-2 text-center text-green-400">✔ Yes</td>
+                                    <td class="p-2 text-center text-red-400">✘ No</td>
+                                </tr>
+                                <tr class="border-b border-slate-700">
+                                    <td class="p-2 font-semibold">Carbon Footprint</td>
+                                    <td class="p-2 text-center text-green-400">Potentially Negative</td>
+                                    <td class="p-2 text-center text-red-400">Positive (Energy Intensive)</td>
+                                </tr>
+                                <tr class="border-b border-slate-700">
+                                    <td class="p-2 font-semibold">Current Efficiency</td>
+                                    <td class="p-2 text-center accent-text">Low</td>
+                                    <td class="p-2 text-center text-green-400">High</td>
+                                </tr>
+                                <tr class="border-b border-slate-700">
+                                    <td class="p-2 font-semibold">Operational Lifespan</td>
+                                    <td class="p-2 text-center accent-text">Short (Days to Weeks)</td>
+                                    <td class="p-2 text-center text-green-400">Long (25+ Years)</td>
+                                </tr>
+                                 <tr>
+                                    <td class="p-2 font-semibold">Core Material</td>
+                                    <td class="p-2 text-center">Abundant Microbes</td>
+                                    <td class="p-2 text-center">Purified Silicon</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="crispr-tech" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8">CRISPR: The Genetic Architect</h2>
+            <div class="md:col-span-2 card rounded-lg shadow-lg p-6 mb-8">
+                <h3 class="text-xl font-bold text-center mb-4">Engineering a Melanin Bio-Factory</h3>
+                <p class="text-slate-400 mb-8 text-center max-w-4xl mx-auto">CRISPR-Cas9 gene editing provides the precision to reprogram microorganisms into highly efficient factories for producing melanin with tailored properties. This process is the key to unlocking melanin's potential for industrial-scale applications.</p>
+                <div class="grid grid-cols-1 md:grid-cols-5 items-center gap-4 text-sm md:text-base">
+                    <div class="flow-box rounded-lg p-3 h-full flex items-center justify-center">1. Identify Melanin Genes in Host Organism</div>
+                    <div class="flow-arrow text-center hidden md:block">→</div>
+                    <div class="flow-box rounded-lg p-3 h-full flex items-center justify-center">2. Engineer with CRISPR to Overexpress Key Enzymes</div>
+                    <div class="flow-arrow text-center hidden md:block">→</div>
+                    <div class="flow-box rounded-lg p-3 h-full flex items-center justify-center">3. Cultivate Engineered Microbes in Bioreactor</div>
+                    <div class="flow-arrow text-center hidden md:block">→</div>
+                    <div class="flow-box rounded-lg p-3 h-full flex items-center justify-center">4. Extract & Purify High-Yield Melanin</div>
+                    <div class="flow-arrow text-center hidden md:block">→</div>
+                    <div class="flow-box rounded-lg p-3 h-full flex items-center justify-center highlight-text">5. Coat Panels for BPV Devices</div>
+                </div>
+            </div>
+            <div class="card rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold text-center mb-4">Boosting Production with Genetic Engineering</h3>
+                <p class="text-slate-400 mb-4 text-center">By enhancing the natural metabolic pathways, CRISPR can dramatically increase the yield of melanin from simple carbon sources, making biomanufacturing economically viable.</p>
+                <div class="chart-container">
+                    <canvas id="melaninYieldChart"></canvas>
+                </div>
+            </div>
+        </section>
+        
+        <section id="synergy" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8">The Synergy: A Bio-Hybrid Solution</h2>
+            <p class="text-lg text-center max-w-4xl mx-auto text-slate-300 mb-8">By combining melanin's protective and conductive properties with BPV systems, we can create hybrid panels that overcome the core limitations of each individual technology, leading to a more durable and efficient solar solution.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-center mb-4">Enhancing Durability and Lifespan</h3>
+                    <p class="text-slate-400 mb-4 text-center">Melanin's ability to absorb harmful UV radiation and resist environmental degradation acts as a natural protective shield, dramatically extending the operational life of sensitive bio-hybrid solar cells.</p>
+                    <div class="chart-container">
+                        <canvas id="lifespanChart"></canvas>
+                    </div>
+                </div>
+                <div class="card rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-center mb-4">Projected Efficiency Gains</h3>
+                    <p class="text-slate-400 mb-4 text-center">While current melanin and BPV devices have low efficiency, their combination, optimized with CRISPR, has the potential to create a new class of high-performing solar cells.</p>
+                    <div class="chart-container">
+                        <canvas id="efficiencyChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="challenges" class="text-center">
+            <h2 class="text-3xl font-bold mb-8">Challenges & The Road Ahead</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                 <div class="card rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-center mb-4 accent-text">Key Technical Hurdles</h3>
+                    <ul class="space-y-4 text-left">
+                        <li class="flex items-start"><span class="text-2xl mr-4">1.</span><div><span class="font-bold">High Charge Recombination:</span> The primary bottleneck in melanin-based cells. Generated electrons are lost before they can be collected, limiting current.</div></li>
+                        <li class="flex items-start"><span class="text-2xl mr-4">2.</span><div><span class="font-bold">Low BPV Current Output:</span> Living cells are not optimized for exporting electricity. Genetic engineering must reroute their natural energy flow.</div></li>
+                        <li class="flex items-start"><span class="text-2xl mr-4">3.</span><div><span class="font-bold">Scalable Biomanufacturing:</span> Moving from lab-scale production to cost-effective, industrial-scale biomanufacturing of high-purity melanin is a major challenge.</div></li>
+                    </ul>
+                </div>
+                <div class="card rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-center mb-4 highlight-text">Future Research Directions</h3>
+                    <ul class="space-y-4 text-left">
+                        <li class="flex items-center"><span class="text-2xl mr-4">🧬</span><div><span class="font-bold">Novel Melanin Engineering:</span> Using CRISPR to design entirely new melanin structures with superior optoelectronic properties and lower recombination rates.</div></li>
+                        <li class="flex items-center"><span class="text-2xl mr-4">🛡️</span><div><span class="font-bold">Advanced Hybrid Systems:</span> Using melanin as a protective, stabilizing layer for highly efficient but unstable materials like perovskites to create durable, high-performance tandem cells.</div></li>
+                        <li class="flex items-center"><span class="text-2xl mr-4">⚙️</span><div><span class="font-bold">Process Optimization:</span> Integrating synthetic biology, electrochemistry, and materials science to design more efficient device architectures and electron transfer pathways.</div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-8 text-slate-500 text-sm">
+        <p>Infographic created based on the report "Artificial Melanin-Coated Panels for Bio-Photovoltaic Systems: A CRISPR-Enabled Approach".</p>
+        <p>Visualizations generated with Chart.js and Tailwind CSS. No SVG or Mermaid JS used in this artifact.</p>
+    </footer>
+
+    <script>
+        function wrapText(text, maxLength) {
+            if (typeof text !== 'string' || text.length <= maxLength) {
+                return text;
+            }
+            const words = text.split(' ');
+            let lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).trim().length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            });
+            if (currentLine) {
+                lines.push(currentLine.trim());
+            }
+            return lines;
+        }
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            } else {
+                return label;
+            }
+        };
+
+        const chartColors = {
+            yellow: '#FFC43D',
+            pink: '#D8315B',
+            lightBlue: '#3E92CC',
+            darkBlue: '#0A2463',
+            white: '#FFFFFF'
+        };
+
+        const defaultChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: chartColors.white,
+                        font: {
+                            size: 14
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    ticks: { color: chartColors.white },
+                    grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                    title: {
+                        display: true,
+                        color: chartColors.white
+                    }
+                },
+                x: {
+                    ticks: { color: chartColors.white },
+                    grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                    title: {
+                        display: true,
+                        color: chartColors.white
+                    }
+                }
+            }
+        };
+
+        const melaninPropertiesCtx = document.getElementById('melaninPropertiesChart').getContext('2d');
+        new Chart(melaninPropertiesCtx, {
+            type: 'radar',
+            data: {
+                labels: [
+                    'Broadband Absorption', 
+                    'Semiconductor Behavior', 
+                    'Redox-Active', 
+                    'Photoprotective (UV Shield)', 
+                    'Superconductive Potential'
+                ],
+                datasets: [{
+                    label: 'Melanin Key Properties',
+                    data: [9, 7, 8, 9, 6],
+                    backgroundColor: 'rgba(255, 196, 61, 0.4)',
+                    borderColor: chartColors.yellow,
+                    pointBackgroundColor: chartColors.yellow,
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: chartColors.yellow
+                }]
+            },
+            options: {
+                ...defaultChartOptions,
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(255, 255, 255, 0.2)' },
+                        grid: { color: 'rgba(255, 255, 255, 0.2)' },
+                        pointLabels: { 
+                            color: chartColors.white,
+                            font: { size: 12 }
+                        },
+                        ticks: {
+                            color: chartColors.white,
+                            backdropColor: 'rgba(0,0,0,0)'
+                        }
+                    }
+                }
+            }
+        });
+        
+        const absorptionSpectrumCtx = document.getElementById('absorptionSpectrumChart').getContext('2d');
+        new Chart(absorptionSpectrumCtx, {
+            type: 'line',
+            data: {
+                labels: ['Ultraviolet (UV)', 'Violet', 'Blue', 'Green', 'Yellow', 'Orange', 'Red', 'Near-Infrared (NIR)'],
+                datasets: [{
+                    label: 'Eumelanin Absorption',
+                    data: [95, 90, 88, 85, 80, 75, 65, 50],
+                    borderColor: chartColors.yellow,
+                    backgroundColor: 'rgba(255, 196, 61, 0.2)',
+                    fill: true,
+                    tension: 0.4
+                },{
+                    label: 'Typical Organic Dye',
+                    data: [10, 20, 70, 85, 75, 25, 10, 5],
+                    borderColor: chartColors.pink,
+                    backgroundColor: 'rgba(216, 49, 91, 0.2)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                ...defaultChartOptions,
+                scales: {
+                    y: { ...defaultChartOptions.scales.y, title: { ...defaultChartOptions.scales.y.title, text: 'Relative Absorption (%)' } },
+                    x: { ...defaultChartOptions.scales.x, title: { ...defaultChartOptions.scales.x.title, text: 'Wavelength of Light' } }
+                }
+            }
+        });
+
+        const melaninYieldCtx = document.getElementById('melaninYieldChart').getContext('2d');
+        new Chart(melaninYieldCtx, {
+            type: 'bar',
+            data: {
+                labels: [wrapText('Wild Type Host Organism', 16), wrapText('CRISPR-Engineered Host Organism', 16)],
+                datasets: [{
+                    label: 'Relative Melanin Yield',
+                    data: [15, 85],
+                    backgroundColor: [chartColors.pink, chartColors.yellow],
+                    borderColor: [chartColors.pink, chartColors.yellow],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                ...defaultChartOptions,
+                 indexAxis: 'y',
+                 plugins: { ...defaultChartOptions.plugins, legend: { display: false } },
+                 scales: {
+                    x: { ...defaultChartOptions.scales.x, title: { ...defaultChartOptions.scales.x.title, text: 'Relative Yield (%)' } }
+                 }
+            }
+        });
+
+        const lifespanCtx = document.getElementById('lifespanChart').getContext('2d');
+        new Chart(lifespanCtx, {
+            type: 'line',
+            data: {
+                labels: ['0', '6 months', '12 months', '18 months', '24 months', '30 months'],
+                datasets: [{
+                    label: 'Melanin-Coated Hybrid Panel',
+                    data: [100, 98, 97, 95, 94, 92],
+                    borderColor: chartColors.yellow,
+                    backgroundColor: 'rgba(255, 196, 61, 0.2)',
+                    fill: true,
+                    tension: 0.1
+                }, {
+                    label: 'Standard Organic PV Panel',
+                    data: [100, 85, 70, 55, 40, 25],
+                    borderColor: chartColors.pink,
+                    backgroundColor: 'rgba(216, 49, 91, 0.2)',
+                    fill: true,
+                    tension: 0.1
+                }]
+            },
+            options: {
+                ...defaultChartOptions,
+                scales: {
+                    y: { ...defaultChartOptions.scales.y, title: { ...defaultChartOptions.scales.y.title, text: 'Performance Retention (%)' } },
+                    x: { ...defaultChartOptions.scales.x, title: { ...defaultChartOptions.scales.x.title, text: 'Time' } }
+                }
+            }
+        });
+        
+        const efficiencyCtx = document.getElementById('efficiencyChart').getContext('2d');
+        new Chart(efficiencyCtx, {
+            type: 'bar',
+            data: {
+                labels: [wrapText('Current BPV Systems', 16), wrapText('Current Melanin DSSC', 16), wrapText('Projected Melanin-BPV Hybrid', 16), wrapText('Conventional Silicon PV', 16)],
+                datasets: [{
+                    label: 'Power Conversion Efficiency (%)',
+                    data: [0.1, 0.4, 15, 22],
+                    backgroundColor: [
+                        'rgba(216, 49, 91, 0.7)',
+                        'rgba(216, 49, 91, 1)',
+                        'rgba(255, 196, 61, 1)',
+                        'rgba(62, 146, 204, 1)'
+                    ]
+                }]
+            },
+            options: {
+                ...defaultChartOptions,
+                plugins: { ...defaultChartOptions.plugins, legend: { display: false } },
+                scales: {
+                    y: { ...defaultChartOptions.scales.y, title: { ...defaultChartOptions.scales.y.title, text: 'Efficiency (%)' } }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
